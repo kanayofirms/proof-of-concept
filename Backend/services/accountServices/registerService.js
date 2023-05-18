@@ -36,3 +36,5 @@ const registerService = async (req, res) => {
     }
 
 }; 
+
+export default registerService;
