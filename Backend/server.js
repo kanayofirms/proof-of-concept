@@ -3,6 +3,7 @@ import { PrismaSessionStore } from "@quixo3/prisma-session-store";
 import expressSession from "express-session";
 import cors from "cors";
 import prisma from "./constants/config.js";
+import accountRoutes from "./routes/accountRoutes.js";
 
 const app = express();
 const PORT = 3000;
