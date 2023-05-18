@@ -1,7 +1,7 @@
 import { Router } from "express";
 import * as accountController from "../controllers/accountController.js";
 import validateRequestBody from "../middlewares/validateBody.js";
-import registerSchema from "../schemas/accountSchema.js";
+import registerSchema from "../schemas/accountSchema/registerSchema.js";
 
 const router = Router();
 
