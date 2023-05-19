@@ -24,8 +24,8 @@ enum Role {
 }
 
 enum UserRole {
-  LECTURER
-  STUDENT
+  MANAGER
+  STAFF
 }
 
 model User {
