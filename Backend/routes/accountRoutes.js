@@ -10,5 +10,7 @@ router.post("/register", validateRequestBody(registerSchema), accountController.
 
 router.post("/login", validateRequestBody(loginSchema), accountController.login);
 
+router.post("/logout", accountController.logout);
+
 
 export default router;
