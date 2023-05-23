@@ -1,6 +1,7 @@
 import { Router } from "express";
 import * as accountController from "../controllers/accountController.js";
 import validateRequestBody from "../middlewares/validateBody.js";
+import requiresAuth from "../middlewares/requiresAuth.js";
 import registerSchema from "../schemas/accountSchema/registerSchema.js";
 import loginSchema from "../schemas/accountSchema/loginSchema.js";
 
@@ -12,5 +13,6 @@ router.post("/login", validateRequestBody(loginSchema), accountController.login)
 
 router.post("/logout", accountController.logout);
 
+router.get("/myProfile", requiresAuth, accountController.myProfile);
 
 export default router;
