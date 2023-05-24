@@ -1,42 +1,50 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+html,
+body {
+  --color-white-300: rgb(226, 232, 240);
+  --color-grey-100: rgb(232, 232, 232);
+  --color-grey-200: rgb(190, 190, 190);
+  --color-grey-300: rgb(100, 116, 139);
+  --color-grey-600: rgb(61, 74, 94);
+  --color-purple-100: rgb(238, 241, 255);
+  --color-purple-300: rgb(199, 210, 254);
+  --color-purple-600: rgb(85, 79, 232);
+  --color-blue-600: rgb(30, 41, 59);
+  --color-blue-900: rgb(15, 23, 42);
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+  //COLORS FOR SPECIFIC USE
+ /* --color-topNavbar: white;
+  --box-shadow: 0px 10px 10px 1px rgb(0 0 0 / 25%);
+  --color-background-inner: #f0f4f8;
+  --color-background-squares: white;
+  --color-text: var(var(--color-blue-600));
+  --color-text-sm: var(var(--color-grey-200));
+  --color-darkSvg: var(var(--color-blue-900));
+  --color-lightBackground: var(var(--color-purple-300));
+  --color-lightBackgroungSvg: var(var(--color-purple-300));
+  --color-btn: var(var(--color-purple-600));
+  --color-btn-hover: rgb(56, 53, 161);
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  //COLORS FOR HOVER
+  --color-hover-red: rgb(160, 1, 1);
+  --color-hover-link: var(var(--color-blue-900));
+  --color-navbarIcon-hover: black;
+  --color-navbarIcon-bg-hover: darkgray;
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  background: var(--color-background-inner);
+  */
 }
+/*
 
-.card {
-  padding: 2em;
-}
+.darkMode{
+  --color-dark-600: #0e0e10;
+  --color-dark-500: #18181b;
+  --color-dark-400: #1f1f23;
+  --color-dark-300: #26262c;
+  --color-dark-200: #323239;
+  --color-dark-100: #3b3b44;
 
-.read-the-docs {
-  color: #888;
+  //CHANGED COLORS
+  
+
 }
+*/
