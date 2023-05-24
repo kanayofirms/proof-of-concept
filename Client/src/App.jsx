@@ -5,9 +5,12 @@ import { useMyProfile } from './queries/authQueries';
 
 function App() {
   const { data, isLoading } = useMyProfile();
+  const router = createBrowserRouter([
+    { path: "login", element: <Fragment>Login</Fragment> },
+  ]);
     return (
   <div className='App'>
-    test
+    <RouterProvider router={router}/>
   </div>
        
     
