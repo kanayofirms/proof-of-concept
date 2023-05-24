@@ -44,6 +44,22 @@ body {
   --color-dark-100: #3b3b44;
 
   //CHANGED COLORS
+  --color-topNavbar: var(--color-dark-500);
+  --color-background-inner: var(--color-dark-500);
+  --color-background-squares: var(--color-dark-300);
+  --color-text: rgb(227, 227, 227);
+  --color-text-sm: rgb(227, 227, 227);
+  --color-darkSvg: rgb(227, 227, 227);
+  --color-lightBackground: var(--color-dark-300);
+  --color-lightBackgroundSvg: var(--color-dark-300);
+  --color-grey-300: rgb(227, 227, 227);
+  --color-grey-200: var(--color-dark-200);
+  --color-grey-100: var(--color-dark-300);
+
+  //HOVER
+  --color-hover-link: var(--color-purple-300);
+  --color-navbarIcon-hover: var(--color-purple0-300);
+  --color-navbarIcon-bg-hover: var(--color-purple-600);
   
 
 }
