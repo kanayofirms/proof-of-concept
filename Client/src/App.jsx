@@ -1,9 +1,11 @@
-//import { useState } from 'react'
+import { Fragment, useState } from 'react'
+import { createBrowserRouter, RouterProvider, Route, Link, Outlet, Navigate } from "react-router-dom";
 import "./styles/App.scss";
+import { useMyProfile } from './queries/authQueries';
 
 function App() {
-
-  return (
+  const { data, isLoading } = useMyProfile();
+    return (
   <div className='App'>
     test
   </div>
