@@ -8,7 +8,13 @@ function App() {
   const { data, isLoading } = useMyProfile();
   const router = createBrowserRouter([
     { path: "login", element: <Fragment>
-      {!isLoading && data?.user?.id ? <Navigate to="/"/> : isLoading ? <GlobalSpinner/> : <h1>Login</h1>}
+      {!isLoading && data?.user?.id ? (
+        <Navigate to="/" />
+      ) : isLoading ? (
+        <GlobalSpinner />
+      ) : (
+        <h1>Login</h1>
+      )}
     </Fragment> },
   ]);
     return (
