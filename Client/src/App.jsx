@@ -12,7 +12,7 @@ function App() {
       element: (
         <Fragment>
           {!isLoading && data?.user?.id ? (
-            <Navigate to='/' />
+            <Navigate to="/" />
           ) : isLoading ? (
             <GlobalSpinner />
           ) : (
@@ -21,14 +21,28 @@ function App() {
         </Fragment>
       ),
     },
+    {
+      path: "/",
+      element: (
+        <Fragment>
+          {isLoading ? (
+            <GlobalSpinner />
+          ) : data && !data?.authed ? (
+            <Navigate to="/login" />
+          ) : (
+            <h1>Hello user</h1>
+          )}
+        </Fragment>
+      ),
+    },
   ]);
+
     return (
   <div className='App'>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </div>
-       
-    
-  )
+  
+  );
 }
 
-export default App
+export default App;
