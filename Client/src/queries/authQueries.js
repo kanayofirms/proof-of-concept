@@ -61,7 +61,7 @@ const useMyProfile = () =>
             throw e?.response?.data?.message;
         }
     };
-/*
+
     const useRegister = () => useMutation({
         mutationFn: register,
         onSuccess: (data) => {
@@ -69,5 +69,5 @@ const useMyProfile = () =>
             return data;
         },
     });
-*/
+
     export { useMyProfile, useLogin, useLogout /*useRegister*/ };
