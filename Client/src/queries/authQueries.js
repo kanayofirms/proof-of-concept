@@ -41,7 +41,7 @@ const useMyProfile = () =>
         const { data } = await axios.post("/logout");
         return data;    
     };
-/*
+
     const useLogout = () => useMutation({
         mutationFn: logout,
         onSuccess: (data) => {
@@ -52,7 +52,7 @@ const useMyProfile = () =>
             queryClient.setQueriesData(ME_KEY, { authed: false })
         }
     });
-
+/*
     const register = async (body) => {
         try{
             const { data } = await axios.post("/register", body);
