@@ -52,7 +52,7 @@ const useMyProfile = () =>
             queryClient.setQueriesData(ME_KEY, { authed: false })
         }
     });
-/*
+
     const register = async (body) => {
         try{
             const { data } = await axios.post("/register", body);
@@ -61,7 +61,7 @@ const useMyProfile = () =>
             throw e?.response?.data?.message;
         }
     };
-
+/*
     const useRegister = () => useMutation({
         mutationFn: register,
         onSuccess: (data) => {
@@ -70,4 +70,4 @@ const useMyProfile = () =>
         },
     });
 */
-    export { useMyProfile, useLogin, /*useLogout, useRegister*/ };
+    export { useMyProfile, useLogin, useLogout /*useRegister*/ };
