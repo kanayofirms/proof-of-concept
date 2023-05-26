@@ -45,11 +45,11 @@ const useMyProfile = () =>
     const useLogout = () => useMutation({
         mutationFn: logout,
         onSuccess: (data) => {
-            queryClient.setQueriesData(["Me"], { authed: false });
+            queryClient.setQueriesData(ME_KEY, { authed: false });
             return data;
         },
         onError: (error) => {
-            queryClient.setQueriesData(["Me"], { authed: false })
+            queryClient.setQueriesData(ME_KEY, { authed: false })
         }
     });
 
