@@ -1,6 +1,6 @@
-//import React from "react";
+import React from "react";
 
-/*const BigInputs = ({ 
+const BigInputs = ({ 
     label, 
     htmlFor, 
     type, 
@@ -29,7 +29,7 @@
     </dir>
     );
 };
-
+/*
 LoginInput.defaultProps = {
     label: "Email",
     htmlFor: undefined,
