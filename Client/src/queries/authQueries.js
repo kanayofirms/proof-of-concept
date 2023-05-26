@@ -2,7 +2,7 @@ import { queryClient, axios } from "../config/config";
 import { useMutation, useQuery } from "@tanstack/react-query";
 
 
-const ME_KEY = ["Me"];
+const ME_KEY = ME_KEY;
 
 const myProfile = async () => {
     try {
@@ -15,7 +15,7 @@ const myProfile = async () => {
 
 const useMyProfile = () => 
     useQuery({
-        queryKey: (["Me"]),
+        queryKey: (ME_KEY),
         staleTime: Infinity,
         retry: false,
         queryFn: myProfile,
@@ -32,7 +32,7 @@ const useMyProfile = () =>
     const useLogin = () => useMutation({
         mutationFn: login,
         onSuccess: (data) => {
-            queryClient.invalidateQueries(["Me"];
+            queryClient.invalidateQueries(["Me"]);
             return data;
         },
     });
