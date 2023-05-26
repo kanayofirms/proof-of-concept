@@ -1,1 +1,1 @@
-import { default } from "./GlobalSpinner";
+export { default } from "./GlobalSpinner";
