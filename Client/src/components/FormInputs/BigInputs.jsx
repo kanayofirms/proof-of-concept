@@ -29,7 +29,7 @@ const BigInputs = ({
     </dir>
     );
 };
-/*
+
 LoginInput.defaultProps = {
     label: "Email",
     htmlFor: undefined,
@@ -40,5 +40,5 @@ LoginInput.defaultProps = {
     onChange: () => {},
     err: "",
 };
-*/
+
 export default BigInputs; 
