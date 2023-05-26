@@ -40,5 +40,5 @@ LoginInput.defaultProps = {
     onChange: () => {},
     err: "",
 };
-
-export default BigInputs; */
+*/
+export default BigInputs; 
