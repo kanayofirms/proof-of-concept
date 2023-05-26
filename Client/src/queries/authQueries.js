@@ -65,7 +65,7 @@ const useMyProfile = () =>
     const useRegister = () => useMutation({
         mutationFn: register,
         onSuccess: (data) => {
-            queryClient.invalidateQueries(["Me"]);
+            queryClient.invalidateQueries(ME_KEY);
             return data;
         },
     });
