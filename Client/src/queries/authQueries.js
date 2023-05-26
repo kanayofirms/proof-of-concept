@@ -28,7 +28,7 @@ const useMyProfile = () =>
         const { data } = await axios.post("/login", body);
         return data;
     };
-/*
+
     const useLogin = () => useMutation({
         mutationFn: login,
         onSuccess: (data) => {
@@ -36,7 +36,7 @@ const useMyProfile = () =>
             return data;
         },
     });
-
+/*
     const logout = async () => {
         const { data } = await axios.post("/logout");
         return data;    
