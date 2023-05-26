@@ -36,12 +36,12 @@ const useMyProfile = () =>
             return data;
         },
     });
-/*
+
     const logout = async () => {
         const { data } = await axios.post("/logout");
         return data;    
     };
-
+/*
     const useLogout = () => useMutation({
         mutationFn: logout,
         onSuccess: (data) => {
