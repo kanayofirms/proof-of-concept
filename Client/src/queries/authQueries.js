@@ -32,7 +32,7 @@ const useMyProfile = () =>
     const useLogin = () => useMutation({
         mutationFn: login,
         onSuccess: (data) => {
-            queryClient.invalidateQueries(["Me"]);
+            queryClient.invalidateQueries(ME_KEY);
             return data;
         },
     });
