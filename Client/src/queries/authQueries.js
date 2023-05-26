@@ -70,4 +70,4 @@ const useMyProfile = () =>
         },
     });
 */
-    export { useMyProfile, /*useLogin, useLogout, useRegister*/ };
+    export { useMyProfile, useLogin, /*useLogout, useRegister*/ };
