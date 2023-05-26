@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider, Route, Link, Outlet, Navigate } fr
 import "./styles/App.scss";
 import { useMyProfile } from './queries/authQueries';
 import GlobalSpinner from "./components/GlobalSpinner"
+import Login from './pages/Login/Login'; 
+
 
 function App() {
   const { data, isLoading } = useMyProfile();
@@ -16,7 +18,7 @@ function App() {
           ) : isLoading ? (
             <GlobalSpinner />
           ) : (
-            <h1>Login</h1>
+            <Login />
           )}
         </Fragment>
       ),
