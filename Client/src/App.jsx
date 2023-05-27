@@ -3,11 +3,12 @@ import { createBrowserRouter, RouterProvider, Route, Link, Outlet, Navigate } fr
 import "./styles/App.scss";
 import { useMyProfile } from './queries/authQueries';
 import GlobalSpinner from "./components/GlobalSpinner"
-import Login from './pages/Login/Login'; 
-
+import Login from "./pages/Login"; 
+import { useTheme } from "./context/ThemeProvider"
 
 function App() {
   const { data, isLoading } = useMyProfile();
+  const { mode } = useTheme();
   const router = createBrowserRouter([
     {
       path: "login",
@@ -40,7 +41,7 @@ function App() {
   ]);
 
     return (
-  <div className='App'>
+  <div className={`App ${mode && "darkMode"}`}>
     <RouterProvider router={router} />
   </div>
   
