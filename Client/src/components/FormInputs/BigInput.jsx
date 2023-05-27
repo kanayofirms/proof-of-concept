@@ -40,5 +40,5 @@ BigInput.defaultProps = {
     onChange: () => {},
     err: "",
 };
-
-export default BigInput; */
+*/
+export default BigInput; 
