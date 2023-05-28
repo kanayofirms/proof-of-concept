@@ -92,9 +92,9 @@ const Button = ({
         </div>
     );
 };
-/*
+
 Button.defaultProps = {
     isLoading: false,
 };
-
+/*
 export default Button;*/
