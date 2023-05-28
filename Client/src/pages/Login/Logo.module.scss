@@ -57,7 +57,7 @@
             filter: blur(3rem);
             @media screen and (max-width: 730px) {
                 filter: blur(8rem);
-            }/*
+            }
             &::before {
                 position: absolute;
                 width: 150%;
@@ -67,5 +67,5 @@
                 content: "";
             }
        } 
-    }*/   
+    }   
 }
