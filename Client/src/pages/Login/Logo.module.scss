@@ -23,7 +23,7 @@
     @media screen and (max-width: 500px) {
         --width-halfCirle: 4rem;
     }
-/*
+
     .logoTop {
         width: var(--width-halfCircle);
         height: var(--height-halfCirle);
@@ -32,7 +32,7 @@
         filter: blur(1.2rem);
         transform: translateY(1px);
     }
-    
+   
     .logoBtm {
         position: relative;
         width: var(--width-halfCircle);
@@ -43,7 +43,7 @@
         transform: translateY(-1px);
         @media screen and (max-width: 730px) {
             filter: blur(0.65rem);
-        }
+        } /*
        .inner {
             position: absolute;
             content: "";
