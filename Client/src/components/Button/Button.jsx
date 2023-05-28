@@ -96,5 +96,5 @@ const Button = ({
 Button.defaultProps = {
     isLoading: false,
 };
-/*
-export default Button;*/
+
+export default Button;
