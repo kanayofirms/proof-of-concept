@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Button.module.scss";
 import { Link } from "react-router-dom";
 import LoadingSpinner from "../LoadingSpinner";
-
+/*
 const Button = ({
     children,
     type,
@@ -97,4 +97,4 @@ Button.defaultProps = {
     isLoading: false,
 };
 
-export default Button;
+export default Button;*/
