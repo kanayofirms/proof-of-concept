@@ -1,7 +1,7 @@
 import loginService from "../services/accountService/loginService.js";
 import registerService from "../services/accountService/registerService.js";
 import logoutService from "../services/accountService/logoutService.js";
-import myProfile from "../services/accountService/myProfileService.js";
+import myProfileService from "../services/accountService/myProfileService.js";
 
 const register = async (req, res) => {
     await registerService(req, res);
@@ -16,7 +16,7 @@ const logout = async (req, res) => {
 };
 
 const myProfile = async (req, res) => {
-    await myProfile(req, res);
+    await myProfileService(req, res);
 };
 
 export { register, login, logout, myProfile };
