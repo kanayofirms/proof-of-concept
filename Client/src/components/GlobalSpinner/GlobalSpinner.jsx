@@ -14,7 +14,7 @@ const GlobalSpinner = () => {
                 <div></div>
             </div>
         </div>
-    )
+    );
 };
 
 export default GlobalSpinner;
