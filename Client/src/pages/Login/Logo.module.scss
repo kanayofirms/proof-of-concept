@@ -50,7 +50,7 @@
             --plusWidth: 6vw;
             top: 0;
             left: calc(-1) * var(--plusWidth) / 2);
-            width: calc(var(--width-halfCircle) + var(--plusWidth) /2);
+            width: calc(var(--width-halfCircle) + var(--plusWidth));
             height: 13vw;
             border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
             background: rgba(204, 204, 204, 0.823);
