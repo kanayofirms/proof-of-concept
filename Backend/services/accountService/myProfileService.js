@@ -1,6 +1,6 @@
 import prisma from "../../constants/config.js";
 
-const myProfile = async (req, res) => {
+const myProfileService = async (req, res) => {
     try{
         const userAccount = await prisma.user.findUnique({
             where: {
@@ -29,4 +29,4 @@ const myProfile = async (req, res) => {
     }
 };
 
-export default myProfile;
+export default myProfileService;
