@@ -2,11 +2,11 @@ import { queryClient, axios } from "../config/config";
 import { useMutation, useQuery } from "@tanstack/react-query";
 
 
-const ME_KEY = ME_KEY;
+//const ME_KEY = ["Me"];
 
-const myProfile = async () => {
+const myprofile = async () => {
     try {
-        const { data } = await axios.get("/myProfile");
+        const { data } = await axios.get("http://localhost:3000/api/myprofile");
         return data;
     } catch (e) {
         return { authed: false };
@@ -15,14 +15,16 @@ const myProfile = async () => {
 
 const useMyProfile = () => 
     useQuery({
-        queryKey: (ME_KEY),
+        queryKey: ["Me"],
         staleTime: Infinity,
         retry: false,
-        queryFn: myProfile,
+        queryFn: myprofile,
         onError:(error) => {
             return error;
         },
     });
+
+    const ME_KEY = ["Me"];
 
     const login = async (body) => {
         const { data } = await axios.post("/login", body);
@@ -69,5 +71,6 @@ const useMyProfile = () =>
             return data;
         },
     });
+    
 
     export { useMyProfile, useLogin, useLogout, useRegister };
