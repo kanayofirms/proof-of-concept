@@ -13,6 +13,6 @@ router.post("/login", validateRequestBody(loginSchema), accountController.login)
 
 router.post("/logout", accountController.logout);
 
-router.get("/myProfile", requiresAuth, accountController.myProfile);
+router.get("/myprofile", requiresAuth, accountController.myprofile);
 
 export default router;
