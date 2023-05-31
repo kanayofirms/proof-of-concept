@@ -1,3 +1,4 @@
+/*
 import React from "react";
 
 const BigInput = ({ 
@@ -41,4 +42,4 @@ BigInput.defaultProps = {
     err: "",
 };
 
-export default BigInput; 
+export default BigInput; */
