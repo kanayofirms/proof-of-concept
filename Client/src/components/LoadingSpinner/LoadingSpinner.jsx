@@ -1,3 +1,4 @@
+/*
 import React from "react";
 import styles from "./LoadingSpinner.module.scss";
 import { AiOutlineLoading } from "react-icons";
@@ -13,4 +14,4 @@ const LoadingSpinner = () => {
     );
 };
 
-export default LoadingSpinner;
+export default LoadingSpinner;*/
