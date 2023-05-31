@@ -38,6 +38,7 @@ app.use(
 );
 
 app.use(express.json());
+
 app.use(express.urlencoded({ extended: true}));
 app.use("/api", accountRoutes);
 app.get("/", (req, res) =>{
