@@ -15,8 +15,8 @@ const logout = async (req, res) => {
     await logoutService(req, res);
 };
 
-const myProfile = async (req, res) => {
+const myprofile = async (req, res) => {
     await myProfileService(req, res);
 };
 
-export { register, login, logout, myProfile };
+export { register, login, logout, myprofile };
