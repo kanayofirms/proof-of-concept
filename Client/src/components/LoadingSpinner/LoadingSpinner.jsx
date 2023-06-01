@@ -1,9 +1,8 @@
-/*
 import React from "react";
 import styles from "./LoadingSpinner.module.scss";
-import { AiOutlineLoading } from "react-icons";
+import { AiOutlineLoading } from "react-icons/ai";
 
-const LoadingSpinner = () => {
+const LoadingSpinner = ({size, color}) => {
     return (
         <div className={styles.container}>
             <AiOutlineLoading
@@ -14,4 +13,4 @@ const LoadingSpinner = () => {
     );
 };
 
-export default LoadingSpinner;*/
+export default LoadingSpinner;
