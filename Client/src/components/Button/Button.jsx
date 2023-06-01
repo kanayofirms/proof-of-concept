@@ -1,4 +1,3 @@
-/*
 import React from "react";
 import styles from "./Button.module.scss";
 import { Link } from "react-router-dom";
@@ -25,7 +24,7 @@ const Button = ({
     isLoading,
 }) => {
     return (
-        <div
+        <div 
             className={
                 size === "lg"
                     ? styles.big
@@ -40,7 +39,7 @@ const Button = ({
                 marginBottom: mb ? `${mb}px` : "0px",
                 alignSelf: align ? align : "auto",
             }}
-        >
+            >
             {isLink ? (
                 <Link
                     to={to}
@@ -99,4 +98,4 @@ Button.defaultProps = {
 };
 
 export default Button;
-*/
+
