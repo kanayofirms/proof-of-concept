@@ -1,4 +1,3 @@
-/*
 import React from "react";
 
 const BigInput = ({ 
@@ -14,7 +13,7 @@ const BigInput = ({
     register, 
 }) => {
     return (
-    <dir className={StyleSheet.container}>
+    <dir className={styles.container}>
         <label htmlFor={htmlFor}>{label}</label>
         <div className={styles.inputWrapper}>
             <input
@@ -42,4 +41,4 @@ BigInput.defaultProps = {
     err: "",
 };
 
-export default BigInput; */
+export default BigInput; 
